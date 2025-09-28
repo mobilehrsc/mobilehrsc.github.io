@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universal Mobile No. Horoscope</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .phone-input { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+    .digit-blocks { display: flex; gap: 4px; }
+    .digit-blocks input {
+      width: 30px; height: 40px; text-align: center; font-size: 18px;
+    }
+    .table {
+      display: table;
+      border-collapse: collapse;
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .row {
+      display: table-row;
+    }
+    .cell {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .cell-Teal {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: Teal;
+    }
+    .cell-LightSeaGreen {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: LightSeaGreen;
+    }
+    .cell-MediumAquamarine {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: MediumAquamarine;
+    }
+    .cell-LightGray {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: LightGray;
+    }
+    .cell-Red {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: Red;
+    }
+    .cell-Crimson {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: Crimson;
+    }
+    .cell-DarkRed {
+      display: table-cell;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+      color: white;
+      background-color: DarkRed;
+    }
+    .header {
+      font-weight: bold;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔮‍ Universal Mobile No. Horoscope</h2>
+
+  <!-- Country Selection -->
+<label for="countrySearch">Search Country / Code:</label>
+<input type="text" id="countrySearch" placeholder="Type 'Thailand' or '66'">
+<select id="country"></select>
+<div><br/></div>
+<div>
+<button id="clearBtn">🔄 Clear Input</button>
+<button id="captureBtn">📷 Download Screenshot</button>
+<input id="showSum" type="checkbox"/> Show Sum
+</div>
+<div><br/></div>
+<div id="captureArea" style="padding:20px; border:1px solid #ccc;">
+  <!-- Phone Input -->
+<div class="phone-input">
+  <span id="prefix"></span>
+  <div class="digit-blocks" id="digitBlocks"></div>
+</div>
+<div id="table-container-en"></div>
+
+<div id="table-container-th"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="./mobile.min.js"></script>
+
+</body>
+</html>
